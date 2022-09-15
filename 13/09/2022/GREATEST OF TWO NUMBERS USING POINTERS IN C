@@ -1,0 +1,19 @@
+#include<stdio.h>
+void main()
+{
+ int x,y, *large, *a,*b;
+printf("Enter the value of x and y :");
+scanf("%d%d",&x,&y);
+a=&x;
+b=&y;
+if(*a>*b){
+large=a;}
+else if(*a<*b){
+large=b;
+printf("The largest nmuber is : %d",*large);}
+else if (*a==*b)
+{
+    printf("values are equal");
+    }
+return 0;
+}
