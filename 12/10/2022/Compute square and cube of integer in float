@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+    int x,a,b,c;
+	float e,f,g;
+	printf("1 for integer\n");
+	printf("2 for float number\n");
+	printf("choose one:");
+	scanf("%d",&x);
+	if(x==1){
+	    printf("enter the number= ");
+	scanf("%d",&c);
+	a=c*c;
+	b=c*c*c;
+	printf("the square of number is= %d\n",a);
+	printf("the triple of number is= %d\n",b);
+	}
+	else if(x==2){
+	    printf("enter the number= ");
+	scanf("%f",&e);
+	f=e*e;
+	g=e*e*e;
+	printf("the square of number is= %f\n",f);
+	printf("the triple of number is= %f\n",g);
+	    
+	}
+	else{
+	    printf("invalid input");
+	}
+	return 0;
+}
