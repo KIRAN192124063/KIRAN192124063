@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int x,a,b,sum,mul,div,sub;
+    printf("1 for sum\n");
+    printf("2 for sub\n");
+    printf("3 for mul\n");
+    printf("4 for div\n");
+    printf("\nenter ur choice:");
+    scanf("%d",&x);
+    printf("enter ur first number:");
+    scanf("%d",&a);
+    printf("enter ur second number:");
+    scanf("%d",&b);
+    if(x==1){
+        sum=a+b;
+        printf("sum of two numbers are:%d",sum);
+    }
+    else if(x==2){
+        sub=a-b;
+        printf("sub of two numbers are:%d",sub);
+    }
+    else if(x==3){
+        mul=a*b;
+        printf("mul o two numbers are:%d",mul);
+    }
+    else if(x==4){
+        div=a/b;
+        printf("div of two numbers are:%d",div);
+    }
+    else{
+        printf("invalid input");
+    }
+    return 0;
+}
